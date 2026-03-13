@@ -1,5 +1,8 @@
 #include <iostream>
 #include <iomanip>
+#include <ctime>
+#include <cstdlib>
+
 // COMSC 210 | Lab 20 | Martha Stephanie Villalta
 // Changes I need to make:
 // 1. Change Default Constructor: Change the null values to a random selection between 3 - 4 legs and prices
