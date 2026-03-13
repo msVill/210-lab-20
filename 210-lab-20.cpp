@@ -1,5 +1,11 @@
 #include <iostream>
 #include <iomanip>
+// COMSC 210 | Lab 20 | Martha Stephanie Villalta
+// Changes I need to make:
+// 1. Change Default Constructor: Change the null values to a random selection between 3 - 4 legs and prices
+// 2. Change Parameter Constructor: Current parameters 1- number of legs. Add 2nd parameter. array of 3 doubles
+//    for prices.
+// 3. In 3rd Code Block: (line 67). Use default constructors to 
 
 using namespace std;
 const int SIZE = 3;
