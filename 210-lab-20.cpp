@@ -5,10 +5,11 @@
 // 1. Change Default Constructor: Change the null values to a random selection between 3 - 4 legs and prices
 // 2. Change Parameter Constructor: Current parameters 1- number of legs. Add 2nd parameter. array of 3 doubles
 //    for prices.
-// 3. In 3rd Code Block: (line 67). Use default constructors to 
+// 3. In 3rd Code Block: (line 67). Use default constructors to populate the objects.
 
 using namespace std;
 const int SIZE = 3;
+const int MIN = 10000, MAX = 99999;
 
 class Chair {
 private:
@@ -18,9 +19,10 @@ public:
     // constructors
     Chair() {
         prices = new double[SIZE];
-        legs = 0;
+        legs = rand() % 2 + 3; // Code amended for random selection between 3 - 4 legs.
         for (int i = 0; i < SIZE; i++)
-            prices[i] = 0;
+            // Need to amend so that it selects random prices.
+            prices[i] = (rand() % (MAX - MIN + 1) + MIN) / (double)100; 
     }
     Chair(int l) {
         prices = new double[SIZE];
