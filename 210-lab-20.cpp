@@ -27,11 +27,11 @@ public:
             // Need to amend so that it selects random prices.
             prices[i] = (rand() % (MAX - MIN + 1) + MIN) / (double)100; 
     }
-    Chair(int l) {
+    Chair(int l, double p[SIZE]) {
         prices = new double[SIZE];
         legs = l;
         for (int i = 0; i < SIZE; i++)
-            prices[i] = 0;
+            prices[i] = p[i];
     }
 
     // setters and getters
